@@ -4,6 +4,7 @@
 * [Issues](http://github.com/sophsec/ruby-ncrack/issues)
 * [Documentation](http://rubydoc.info/gems/ruby-ncrack/frames)
 * [Email](mailto:postmodern.mod3 at gmail.com)
+* [Ncrack](http://nmap.org/ncrack/)
 
 ## Description
 
