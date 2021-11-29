@@ -1,7 +1,7 @@
 # ruby-ncrack
 
-* [Source](http://github.com/sophsec/ruby-ncrack)
-* [Issues](http://github.com/sophsec/ruby-ncrack/issues)
+* [Source](http://github.com/postmodern/ruby-ncrack)
+* [Issues](http://github.com/postmodern/ruby-ncrack/issues)
 * [Documentation](http://rubydoc.info/gems/ruby-ncrack/frames)
 * [Ncrack](http://nmap.org/ncrack/)
 
