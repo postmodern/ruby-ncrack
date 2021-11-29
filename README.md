@@ -15,7 +15,11 @@ A Ruby interface to [ncrack], Network authentication cracking tool.
 
 ## Examples
 
-    require 'ncrack'
+```ruby
+require 'ncrack'
+
+Ncrack::Command.run(targets: %w[10.0.0.130:21 192.168.1.2:22])
+```
 
 ## Requirements
 
