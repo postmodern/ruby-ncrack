@@ -3,7 +3,6 @@
 * [Source](http://github.com/postmodern/ruby-ncrack)
 * [Issues](http://github.com/postmodern/ruby-ncrack/issues)
 * [Documentation](http://rubydoc.info/gems/ruby-ncrack/frames)
-* [Ncrack][ncrack]
 
 ## Description
 
