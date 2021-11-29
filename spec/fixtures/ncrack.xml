@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncrackrun>
+<!-- Ncrack 0.7 scan initiated Mon Nov 29 10:27:35 2021 as: ncrack -v -m HTTP -&#45;user alice,eve,bob,root,admin -&#45;pass foo,bar,test,password,swordfish,god,hunter -g path=/protected_content -oX ncrack.xml http://localhost:4567 -->
+<ncrackrun scanner="ncrack" args="ncrack -v -m HTTP -&#45;user alice,eve,bob,root,admin -&#45;pass foo,bar,test,password,swordfish,god,hunter -g path=/protected_content -oX ncrack.xml http://localhost:4567" start="1638210455" startstr="Mon Nov 29 10:27:35 2021" version="0.7" xmloutputversion="1.00">
+<verbose level="1"/>
+<debugging level="0"/>
+<service starttime="1638210455" endtime="1638210455">
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<port protocol="tcp" portid="4567" name="http"></port>
+<credentials username="admin" password="swordfish"></credentials>
+<credentials username="bob" password="hunter"></credentials>
+</service>
+</ncrackrun>
