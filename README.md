@@ -28,6 +28,6 @@ A Ruby interface to Ncrack, Network authentication cracking tool.
 
 ## Copyright
 
-Copyright (c) 2011 Postmodern
+Copyright (c) 2011-2021 Hal Brodigan
 
 See {file:LICENSE.txt} for details.
