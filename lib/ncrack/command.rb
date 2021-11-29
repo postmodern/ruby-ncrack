@@ -19,6 +19,7 @@ module Ncrack
       # Timing and Performance 
       option '-T', name: :timing, value: {type: Num.new}
       option '--connection-limit', value: {type: Num.new}
+      option '--stealth-linear'
 
       # Authentication
       option '-U', name: :username_file, value: {type: InputFile.new}
@@ -26,6 +27,7 @@ module Ncrack
       option '--user', value: {type: List.new}
       option '--pass', value: {type: List.new}
       option '--passwords-first'
+      option '--pairwise'
 
       # Output
       option '-oN', name: :output_normal, value: true
@@ -39,6 +41,7 @@ module Ncrack
 
       # Misc
       option '--resume', value: {type: InputFile.new}
+      option '--save', value: true
       option '-f', name: :first
       option '-6', name: :ipv4
       option '-sL', name: :list
