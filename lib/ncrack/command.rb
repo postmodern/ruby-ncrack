@@ -53,5 +53,11 @@ module Ncrack
 
     end
 
+    alias usernames user
+    alias usernames= user=
+
+    alias passwords pass
+    alias passwords= pass=
+
   end
 end
