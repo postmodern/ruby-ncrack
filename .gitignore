@@ -1,2 +1,9 @@
-doc/
-pkg/
+/Gemfile.lock
+/doc
+/pkg
+.DS_Store
+.yardoc
+*.db
+*.log
+*.swp
+*~
