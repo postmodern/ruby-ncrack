@@ -12,7 +12,7 @@ has_yard: true
 requirements: "ncrack >= 0.3ALPHA"
 
 dependencies:
-  rprogram: ~> 0.3
+  command_mapper: ~> 0.1
 
 development_dependencies:
   rubygems-tasks: ~> 0.1

@@ -20,7 +20,7 @@ A Ruby interface to Ncrack, Network authentication cracking tool.
 ## Requirements
 
 * [nmap](http://www.insecure.org/) >= 0.3ALPHA
-* [rprogram](http://github.com/sophsec/rprogram) ~> 0.3
+* [command_mapper](http://github.com/postmodern/command_mapper.rb#readme) ~> 0.1
 
 ## Install
 
