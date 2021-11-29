@@ -27,7 +27,9 @@ Ncrack::Command.run(targets: %w[10.0.0.130:21 192.168.1.2:22])
 
 ## Install
 
-    $ gem install ruby-ncrack
+```shell
+$ gem install ruby-ncrack
+```
 
 ## Copyright
 
