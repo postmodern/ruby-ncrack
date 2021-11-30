@@ -5,13 +5,15 @@ require 'nokogiri'
 module Ncrack
   class XML
 
+    # The parsed XML document.
+    #
+    # @return [Nokogiri::XML::Node]
+    attr_reader :doc
+
     # The path to the XML file.
     #
     # @return [String, nil]
     attr_reader :path
-
-    # The parsed XML document.
-    attr_reader :doc
 
     #
     # Creates a new XML object.
@@ -30,8 +32,8 @@ module Ncrack
     #   The newly created XML parser.
     #
     def initialize(doc, path: nil)
-      @path = File.expand_path(path) if path
       @doc  = doc
+      @path = File.expand_path(path) if path
 
       yield self if block_given?
     end
@@ -140,6 +142,17 @@ module Ncrack
     #
     def service
       each_service.first
+    end
+
+    #
+    # @return [String]
+    #
+    def to_s
+      if @path
+        @path
+      else
+        @doc.to_s
+      end
     end
 
   end
