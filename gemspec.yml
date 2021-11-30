@@ -14,6 +14,7 @@ metadata:
   source_code_uri:   https://github.com/postmodern/ruby-ncrack
   bug_tracker_uri:   https://github.com/postmodern/ruby-ncrack/issues
   changelog_uri:     https://github.com/postmodern/ruby-ncrack/blob/master/ChangeLog.md
+  rubygems_mfa_required: 'true'
 
 requirements: "ncrack >= 0.7"
 
