@@ -1,6 +1,43 @@
 require 'command_mapper/command'
 
 module Ncrack
+  #
+  # ## `ncrack` options:
+  #
+  # * `-iX` - `ncrack.input_xml`
+  # * `-iN` - `ncrack.input_normal`
+  # * `-iL` - `ncrack.input_list`
+  # * `--exclude` - `ncrack.exclude`
+  # * `--excludefile` - `ncrack.exclude_file`
+  # * `-p` - `ncrack.ports`
+  # * `-m` - `ncrack.service_options`
+  # * `-g` - `ncrack.global_options`
+  # * `-T` - `ncrack.timing`
+  # * `--connection-limit` - `ncrack.connection_limit`
+  # * `--stealth-linear` - `ncrack.stealth_linear`
+  # * `-U` - `ncrack.username_file`
+  # * `-P` - `ncrack.password_file`
+  # * `--user` - `ncrack.user`
+  # * `--pass` - `ncrack.pass`
+  # * `--passwords-first` - `ncrack.passwords_first`
+  # * `--pairwise` - `ncrack.pairwise`
+  # * `-oN` - `ncrack.output_normal`
+  # * `-oX` - `ncrack.output_xml`
+  # * `-oA` - `ncrack.output_all`
+  # * `-v` - `ncrack.verbose`
+  # * `-d` - `ncrack.debug`
+  # * `--nsock-trace` - `ncrack.nsock_trace`
+  # * `--log-errors` - `ncrack.log_errors`
+  # * `--append-output` - `ncrack.append_output`
+  # * `--resume` - `ncrack.resume`
+  # * `--save` - `ncrack.save`
+  # * `-f` - `ncrack.first`
+  # * `-6` - `ncrack.ipv4`
+  # * `-sL` - `ncrack.list`
+  # * `--datadir` - `ncrack.datadir`
+  # * `-V` - `ncrack.version`
+  # * `-h` - `ncrack.help`
+  #
   class Command < CommandMapper::Command
 
     command 'ncrack' do
