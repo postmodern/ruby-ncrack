@@ -1,7 +1,7 @@
+# ruby-ncrack
+
 [![CI](https://github.com/postmodern/ruby-ncrack/actions/workflows/ruby.yml/badge.svg)](https://github.com/postmodern/ruby-ncrack/actions/workflows/ruby.yml)
 [![Gem Version](https://badge.fury.io/rb/ruby-ncrack.svg)](https://badge.fury.io/rb/ruby-ncrack)
-
-# ruby-ncrack
 
 * [Source](http://github.com/postmodern/ruby-ncrack)
 * [Issues](http://github.com/postmodern/ruby-ncrack/issues)
