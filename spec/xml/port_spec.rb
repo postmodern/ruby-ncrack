@@ -30,6 +30,10 @@ describe Ncrack::XML::Port do
   describe "#name" do
     subject { super().name }
 
+    it "must return a String" do
+      expect(subject).to be_kind_of(String)
+    end
+
     it "must return the 'name' attribute" do
       expect(subject).to eq(node['name'])
     end

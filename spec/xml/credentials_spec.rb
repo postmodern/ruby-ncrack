@@ -14,6 +14,10 @@ describe Ncrack::XML::Credentials do
   describe "#username" do
     subject { super().username }
 
+    it "must return a String" do
+      expect(subject).to be_kind_of(String)
+    end
+
     it "must return the 'username' attribute" do
       expect(subject).to eq(node['username'])
     end
@@ -21,6 +25,10 @@ describe Ncrack::XML::Credentials do
 
   describe "#password" do
     subject { super().password }
+
+    it "must return a String" do
+      expect(subject).to be_kind_of(String)
+    end
 
     it "must return the 'password' attribute" do
       expect(subject).to eq(node['password'])

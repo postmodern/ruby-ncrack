@@ -12,8 +12,14 @@ describe Ncrack::XML::Address do
   subject { described_class.new(node) }
 
   describe "#addr" do
+    subject { super().addr }
+
+    it "must return a String" do
+      expect(subject).to be_kind_of(String)
+    end
+
     it "must return the 'addr' attribute" do
-      expect(subject.addr).to eq(node['addr'])
+      expect(subject).to eq(node['addr'])
     end
   end
 
