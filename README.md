@@ -63,6 +63,18 @@ end
 $ gem install ruby-ncrack
 ```
 
+### gemspec
+
+```ruby
+gemspec.add_dependency 'ruby-ncrack', '~> 0.1'
+```
+
+### Gemfile
+
+```ruby
+gem 'ruby-ncrack', '~> 0.1'
+```
+
 ## Copyright
 
 Copyright (c) 2011-2021 Hal Brodigan
