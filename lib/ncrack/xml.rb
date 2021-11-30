@@ -51,13 +51,20 @@ module Ncrack
     # @param [String] xml
     #   The XML String.
     #
+    # @yield [xml]
+    #   If a block is given, it will be passed the newly created XML
+    #   parser.
+    #
+    # @yieldparam [XML] xml
+    #   The newly created XML parser.
+    #
     # @return [XML]
     #   The parsed XML.
     #
     # @api public
     #
-    def self.parse(xml)
-      new(Nokogiri::XML(xml))
+    def self.parse(xml,&block)
+      new(Nokogiri::XML(xml),&block)
     end
 
     #
@@ -66,15 +73,22 @@ module Ncrack
     # @param [String] path
     #   The path to the XML file.
     #
+    # @yield [xml]
+    #   If a block is given, it will be passed the newly created XML
+    #   parser.
+    #
+    # @yieldparam [XML] xml
+    #   The newly created XML parser.
+    #
     # @return [XML]
     #   The parsed XML.
     #
     # @api public
     #
-    def self.open(path)
+    def self.open(path,&block)
       path = File.expand_path(path)
 
-      new(Nokogiri::XML(File.open(path)), path: path)
+      new(Nokogiri::XML(File.open(path)), path: path, &block)
     end
 
     #
