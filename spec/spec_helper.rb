@@ -1,4 +1,6 @@
 require 'rspec'
-require 'ncrack/version'
+require 'simplecov'
+SimpleCov.start
 
+require 'ncrack/version'
 include Ncrack
