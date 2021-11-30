@@ -9,7 +9,7 @@ module Ncrack
         @node = node
       end
 
-      PROTOCLS = {
+      PROTOCOLS = {
         'tcp' => :tcp,
         'udp' => :udp
       }
