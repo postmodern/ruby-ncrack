@@ -1,3 +1,5 @@
+[![CI](https://github.com/postmodern/ruby-ncrack/actions/workflows/ruby.yml/badge.svg)](https://github.com/postmodern/ruby-ncrack/actions/workflows/ruby.yml)
+
 # ruby-ncrack
 
 * [Source](http://github.com/postmodern/ruby-ncrack)
