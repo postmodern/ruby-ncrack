@@ -8,6 +8,8 @@ module Ncrack
     # The parsed XML document.
     #
     # @return [Nokogiri::XML::Node]
+    #
+    # @api private
     attr_reader :doc
 
     # The path to the XML file.
@@ -31,6 +33,8 @@ module Ncrack
     # @yieldparam [XML] xml
     #   The newly created XML parser.
     #
+    # @api private
+    #
     def initialize(doc, path: nil)
       @doc  = doc
       @path = File.expand_path(path) if path
@@ -47,6 +51,8 @@ module Ncrack
     # @return [XML]
     #   The parsed XML.
     #
+    # @api public
+    #
     def self.parse(xml)
       new(Nokogiri::XML(xml))
     end
@@ -59,6 +65,8 @@ module Ncrack
     #
     # @return [XML]
     #   The parsed XML.
+    #
+    # @api public
     #
     def self.open(path)
       path = File.expand_path(path)
