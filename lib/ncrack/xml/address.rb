@@ -41,7 +41,7 @@ module Ncrack
       #
       # @return [Boolean]
       #
-      def ipv6
+      def ipv6?
         type == :ipv6
       end
 
