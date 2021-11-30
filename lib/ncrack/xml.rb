@@ -6,6 +6,14 @@ module Ncrack
   #
   # Represents an ncrack XML file or XML data.
   #
+  # ## Examples
+  #
+  #     require 'ncrack/xml'
+  #     
+  #     Ncrack::XML.open('ncrack.xml') do |xml|
+  #       ...
+  #     end
+  #
   class XML
 
     # The parsed XML document.
