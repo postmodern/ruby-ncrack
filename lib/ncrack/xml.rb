@@ -84,7 +84,7 @@ module Ncrack
     # @return [Time]
     #
     def start
-      @start |= Time.at(@doc.root['start'])
+      @start ||= Time.at(@doc.root['start'].to_i)
     end
 
     #
