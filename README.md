@@ -17,10 +17,20 @@ A Ruby interface to [ncrack], Network authentication cracking tool.
 
 ## Examples
 
+Running `ncrack` from Ruby:
+
 ```ruby
 require 'ncrack'
 
-Ncrack::Command.run(targets: %w[10.0.0.130:21 192.168.1.2:22])
+Ncrack::Command.run(targets: %w[10.0.0.130:21 192.168.1.2:22], output_xml: 'ncrack.xml')
+```
+
+Parsing `ncrack` XML files:
+
+```ruby
+Ncrack::XML.open('ncrack.xml') do |xml|
+  # ...
+end
 ```
 
 ## Requirements
