@@ -105,14 +105,14 @@ module Ncrack
     # @return [Integer]
     #
     def verbose
-      @verbose ||= @doc.xpath('/ncrackrun/verbose')['level'].to_i
+      @verbose ||= @doc.at_xpath('/ncrackrun/verbose')['level'].to_i
     end
 
     #
     # @return [Integer]
     #
     def debugging
-      @debugging ||= @doc.xpath('/ncrackrun/debugging')['level'].to_i
+      @debugging ||= @doc.at_xpath('/ncrackrun/debugging')['level'].to_i
     end
 
     #
