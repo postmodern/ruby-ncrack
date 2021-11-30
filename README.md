@@ -14,8 +14,10 @@ A Ruby interface to [ncrack], Network authentication cracking tool.
 ## Features
 
 * Provides a [Ruby interface][Ncrack::Command] for running the `ncrack` utility.
+* Provides a [parser][Ncrack::XML] for enumerating Ncrack XML output files.
 
 [Ncrack::Command]: https://rubydoc.info/gems/ruby-ncrack/Ncrack/Command
+[Ncrack::XML]: https://rubydoc.info/gems/ruby-ncrack/Ncrack/XML
 
 ## Examples
 
