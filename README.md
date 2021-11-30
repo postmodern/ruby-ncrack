@@ -27,6 +27,7 @@ Ncrack::Command.run(targets: %w[10.0.0.130:21 192.168.1.2:22])
 
 * [ncrack] >= 0.7
 * [command_mapper](http://github.com/postmodern/command_mapper.rb#readme) ~> 0.1
+* [nokogiri](https://github.com/sparklemotion/nokogiri#readme) ~> 1.0
 
 ## Install
 

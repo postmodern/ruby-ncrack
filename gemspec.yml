@@ -20,6 +20,7 @@ requirements: "ncrack >= 0.7"
 
 dependencies:
   command_mapper: ~> 0.1
+  nokogiri: ~> 1.0
 
 development_dependencies:
   bundler: ~> 2.0
