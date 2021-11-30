@@ -9,7 +9,7 @@ email: postmodern.mod3@gmail.com
 homepage: http://github.com/postmodern/ruby-ncrack#readme
 has_yard: true
 
-requirements: "ncrack >= 0.3ALPHA"
+requirements: "ncrack >= 0.7"
 
 dependencies:
   command_mapper: ~> 0.1
