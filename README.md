@@ -13,7 +13,9 @@ A Ruby interface to [ncrack], Network authentication cracking tool.
 
 ## Features
 
-* Provides a Ruby interface for running `ncrack`.
+* Provides a [Ruby interface][Ncrack::Command] for running the `ncrack` utility.
+
+[Ncrack::Command]: https://rubydoc.info/gems/ruby-ncrack/Ncrack/Command
 
 ## Examples
 
