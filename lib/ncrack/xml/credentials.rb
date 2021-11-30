@@ -16,6 +16,8 @@ module Ncrack
         @username ||= @node['username']
       end
 
+      alias user_name username
+
       #
       # @return [String]
       #
