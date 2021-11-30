@@ -24,7 +24,7 @@ A Ruby interface to [ncrack], Network authentication cracking tool.
 Running `ncrack` from Ruby:
 
 ```ruby
-require 'ncrack'
+require 'ncrack/command'
 
 Ncrack::Command.run(targets: %w[10.0.0.130:21 192.168.1.2:22], output_xml: 'ncrack.xml')
 ```
@@ -32,6 +32,8 @@ Ncrack::Command.run(targets: %w[10.0.0.130:21 192.168.1.2:22], output_xml: 'ncra
 Parsing `ncrack` XML files:
 
 ```ruby
+require 'ncrack/xml'
+
 Ncrack::XML.open('ncrack.xml') do |xml|
   # ...
 end
