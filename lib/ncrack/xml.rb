@@ -11,7 +11,13 @@ module Ncrack
   #     require 'ncrack/xml'
   #     
   #     Ncrack::XML.open('ncrack.xml') do |xml|
-  #       ...
+  #       xml.each_service do |service|
+  #         puts "#{service.address} #{service.port.number}/#{service.port.name}:"
+  #     
+  #         service.each_credentials.each do |credentials|
+  #           puts "  #{credentials}"
+  #         end
+  #       end
   #     end
   #
   class XML
