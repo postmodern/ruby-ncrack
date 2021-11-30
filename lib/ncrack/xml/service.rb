@@ -17,28 +17,28 @@ module Ncrack
       # @return [Time]
       #
       def start_time
-        @start_time ||= Time.at(@node['starttime'])
+        @start_time ||= Time.at(@node['starttime'].to_i)
       end
 
       #
       # @return [Time]
       #
       def end_time
-        @end_time ||= Time.at(@node['endtime'])
+        @end_time ||= Time.at(@node['endtime'].to_i)
       end
 
       #
       # @return [Address]
       #
       def address
-        @address ||= Address.new(@node.xpath('address'))
+        @address ||= Address.new(@node.at_xpath('address'))
       end
 
       #
       # @return [Port]
       #
       def port
-        @port ||= Port.new(@node.xpath('port'))
+        @port ||= Port.new(@node.at_xpath('port'))
       end
 
       #
@@ -48,11 +48,11 @@ module Ncrack
       #
       # @return [Enumerator]
       #
-      def each_credential
+      def each_credentials
         return enum_for(__method__) unless block_given?
 
         @node.xpath('credentials').each do |node|
-          yield Credential.new(node)
+          yield Credentials.new(node)
         end
       end
 
@@ -60,7 +60,14 @@ module Ncrack
       # @return [Array<Credential>]
       #
       def credentials
-        each_credential.to_a
+        each_credentials.to_a
+      end
+
+      #
+      # @return [Credential, nil]
+      #
+      def credential
+        each_credentials.first
       end
 
     end
