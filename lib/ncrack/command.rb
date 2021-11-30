@@ -2,6 +2,8 @@ require 'command_mapper/command'
 
 module Ncrack
   #
+  # Provides an interface for invoking the `ncrack` utility.
+  #
   # ## Example
   #
   #     require 'ncrack'
