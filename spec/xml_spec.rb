@@ -109,6 +109,10 @@ describe Ncrack::XML do
     it "must return the 'level' attribute of the 'verbose' child element as an Integer" do
       expect(subject).to eq(doc.root.at_xpath('verbose')['level'].to_i)
     end
+
+    it "must be > 0" do
+      expect(subject).to be > 0
+    end
   end
 
   describe "#debugging" do

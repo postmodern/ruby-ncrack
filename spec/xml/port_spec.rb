@@ -25,6 +25,10 @@ describe Ncrack::XML::Port do
     it "must return the 'portid' attribute as an Integer" do
       expect(subject).to eq(node['portid'].to_i)
     end
+
+    it "must be > 0" do
+      expect(subject).to be > 0
+    end
   end
 
   describe "#name" do
