@@ -15,6 +15,8 @@ module Ncrack
       # @param [Nokogiri::XML::Node] node
       #   The XML node for the `service` XML element.
       #
+      # @api private
+      #
       def initialize(node)
         @node = node
       end
